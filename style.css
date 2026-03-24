@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+
+
+
+.topo {
+    background-color: #111;
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #f3f3f3;
+    width: 100%;
+    /* Mantém os links do menu/topo/header em posicionamento horizontal, sem ocorrer quebra */
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.topo a {
+    text-decoration: none;
+    color: #f3f3f3;
+    margin: 0 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    
+    transition: background-color 0.3s;
+}
+
+.topo a:hover {
+    background-color: #302136;
+    padding: 0.8rem;
+    border-radius: 12px;
+}
+
+.banner {
+    background-color: #222;
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    background-image: url("img/capa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sobre {
+    margin: 0 auto;
+    padding: 12rem;
+    background-color: #f3f3f3;
+    max-width: 1024px;
+    width: 100%;
+    text-align: center;
+}
+
+.sobre h2, h3, p {
+    margin: 1.1rem auto;
+}
+
+.sobre p {
+    line-height: 2rem;
+    font-size: 1.3rem;
+    color: #111;
+    text-shadow: 5px 1px 10px #111;
+}
+
+.disponibilidade {
+    background-color: #302136;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 12rem;
+}
+
+.disponibilidade h2 {
+    margin-bottom: 1.3rem;
+    color: #f3f3f3;
+    font-size: 1.8rem;
+}
+
+.disponibilidade img {
+    flex-shrink: 0;
+    width: 60%;
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px #f3f3f3;
+    transition: box-shadow 0.3s;
+    margin-bottom: 1.3rem;
+}   
+
+.disponibilidade img:hover {
+    box-shadow: 3px 3px 10px rgb(52, 189, 177);
+}
+
+.disponibilidade p {
+    line-height: 1.8rem;
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.disponibilidade p div  {
+    max-width: 95%;
+}
+
+.container-temporadas {
+    margin: 0 auto;
+    text-align: center;
+
+    max-width: 80%;
+    width: 100%;
+
+}
+
+.temporada {
+    border-radius: 8px;
+    padding: 3rem;
+    margin: 3rem auto;
+    box-shadow: 5px 5px 5px 5px #ddd;
+    transition: background-color, box-shadow, 0.3s;
+    
+}
+
+.temporada p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-shadow: 2px 2px 10px #222;
+
+}
+
+.temporada:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 5px 5px #302136;
+}
+
+.container-imagens {
+    
+    margin: 0 auto;
+    text-align: center;
+
+    
+}
+
+.container-imagens img {
+    width: 300px; /* tamanho fixo */
+    flex-shrink: 0; /* impede de encolher */
+    box-shadow: 3px 3px 3px #333;
+    border-radius: 8px;
+}
+
+.container-imagens  div {
+    padding: 1.2rem;
+    display: flex;
+    overflow: auto;
+    gap: 2rem;
+    scrollbar-width: 8px;
+    scrollbar-color: #302136 #1e1b4b;
+}
+
+.rodapé {
+    color: #f3f3f3;
+    text-align: center;
+    text-shadow: 2px 2px 2px #222;
+    margin-top: 3rem;
+    padding: 5rem;
+    background-color: #302136;
+}
+
+
+@media(max-width: 786px) {
+    .topo {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .banner {
+        max-width: 100%;
+        background-size: cover;
+        background-position: center left;
+
+    }
+
+    .disponibilidade img {
+        flex-shrink: 0;
+        width: 90%;
+        max-width: 90%;
+        border-radius: 8px;
+        box-shadow: 3px 3px 10px #f3f3f3;
+        transition: box-shadow 0.3s;
+        margin-bottom: 1.3rem;
+    }   
+}
